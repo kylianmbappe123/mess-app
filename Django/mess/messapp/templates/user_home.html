@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:70rem; height:100rem; background-color:rgb(72, 143, 107);}
+        body{background-color: rgb(71, 207, 143);}
+        a {display:block;color:white;text-align:center;padding:16px;}
+    </style>
+</head>
+<body>
+    <center><font size="300" color="white">
+    <h3><i>YA SCENE MONE</i></h3>
+    <br>
+    <div>
+        <marquee>It is in working stage. Please wait for furthur updates</marquee>
+        <br>
+        <br>
+        <p>Welcome,&nbsp;{{request.user}}</p>
+        <a href="{% url 'sign_out' %}">logout</a>
+        
+    </div>
+    </center></font>
+</body>
+</html>

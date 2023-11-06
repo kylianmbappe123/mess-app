@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:70rem; height:100rem; background-color:rgb(71, 207, 143);}
+        body{background-color: rgb(72, 143, 107);}
+        a {display:block;color:white;text-align:center;padding:16px;}
+    </style>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <center><font size="300" color="white">
+        <h3>MESS LOGIN</h3>
+        <div>
+            <br>
+            <b>user name:</b><input type="text" placeholder="user registration" name="username" style="width:300px; height:40px;">
+            <br>
+            <b>password:</b>&nbsp;<input type="password" placeholder="create a password" name="password" style="width:300px; height:40px; color:aquamarine;">
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="register" style="color:rgb(255, 255, 255); display:inline-block; background-color:rgb(55, 49, 49); width:100px; height:40px;" >
+            <br><br><a href="{% url 'mess_register' %}">Don't have an account?</a>
+        </div>
+        </center></font>
+    </form>
+</body>
+</html>

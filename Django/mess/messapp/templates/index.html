@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color:#003399;}
+        ul{overflow:hidden;background-color:black;}
+        li{float:left;}
+        li a {display:block;color:white;text-align:center;padding:16px;}
+        li a:hover {background-color:rgb(72, 143, 107);}
+        font{color: white;}
+    </style>
+    
+</head>
+<body>
+    <center>
+    <font size="300">
+    <br>
+    <h3><b><i>YA SCENE MONE</i></b></h3>
+    </font>
+    <ul>
+    <li><a href="{% url 'user_register' %}"> USER SIGN IN</a><br></li>
+    <li><a href="{% url 'user_login' %}">USER LOGIN</a><br></li>
+    <li><a href="{% url 'mess_register' %}"> MESS SIGN IN</a><br></li>
+    <li><a href="{% url 'mess_login' %}">MESS LOGIN</a><br></li>
+    </ul>
+    <img src="{% static 'img/aaa.jpg' %}" height="700px" width="1400px"> 
+    
+</center>
+
+</body>
+</html>
